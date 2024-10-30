@@ -22,7 +22,7 @@ var delete_options = {
 	 */
 	"from_archive":false,
 	/*  unretweet: seems obvious, but it unretweet if set to true */
-	"unretweet":false,
+	"unretweet":true,
 	/* do_not_remove_pinned_tweet: THIS CAN FAIL. Twitter has too many different way to format their response that I cannot guarantee this to work 100%
 	   It should work for newer tweets. HOWEVER, use the "tweets_to_ignore" below and put in your pinned tweet ID, this will work 100%.
 	   'why do you make this option then', this is a safeguard for people that forgot to add their pinned tweet in the ignore list.
@@ -60,8 +60,8 @@ var delete_options = {
 		Let's say you want to delete tweets from past 6 months. Today is September 19th 2023.
 		You would set after_date to 2023-03-18 (effectively 6 months ago) and before_date 2023-09-20 (tomorrow's date. So it deletes tweets from today too) 
 	*/
-	"after_date":new Date('1900-01-01'), // year-month-day
-	"before_date":new Date('2100-01-01') // year-month-day
+	"after_date":new Date('2023-10-11'), // year-month-day
+	"before_date":new Date('2024-09-08') // year-month-day
 }
 
 function buildAcceptLanguageString() {
